@@ -13,18 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _1312193
+namespace Gomoku
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-       
-        //ô caro
+         //ô caro
         Rectangle rec;
-        const int cost_rec = 50;
-        int Max_square = 0;
+        double cost_rec_height = 0;
+        double cost_rec_width = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -32,21 +31,25 @@ namespace _1312193
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-           
-
-            Max_square = (int)cs_gomoku.ActualHeight / 50;
+            //chiều cao của 1 ô
+            cost_rec_height = cs_gomoku.ActualHeight/12;
+            //chiều rộng của 1 ô
+            cost_rec_width = cs_gomoku.ActualWidth / 12;
+            //số ô
+            int Max_square = 12;
 
             for (int i = 0; i < Max_square; i++)
                 for (int j = 0; j < Max_square; j++)
                 {
                     rec = new Rectangle();
-                    rec.Height = rec.Width = cost_rec;
+                    rec.Height = cost_rec_height;
+                    rec.Width = cost_rec_width;
                     if ((i+j) % 2 == 0)
                         rec.Fill = Brushes.White;
                     else
                         rec.Fill = Brushes.Tomato;
-                    Canvas.SetLeft(rec, i*50);
-                    Canvas.SetTop(rec, j*50);
+                    Canvas.SetLeft(rec, i * cost_rec_width);
+                    Canvas.SetTop(rec, j * cost_rec_height);
                     cs_gomoku.Children.Add(rec);
 
                 }
@@ -62,8 +65,8 @@ namespace _1312193
         {
             Point p = new Point();
             p = e.GetPosition(cs_gomoku);
-            int Column = (int)(p.X / cost_rec) + 1;
-            int Row = (int)(p.Y / cost_rec)+1;
+            int Column = (int)(p.X / cost_rec_height) + 1;
+            int Row = (int)(p.Y / cost_rec_width) + 1;
             MessageBox.Show("Column: " + Column + "\n" + "Row: " + Row, "Infomation", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
@@ -85,8 +88,9 @@ namespace _1312193
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             String content = tb_chat.Text;
+            String time = DateTime.Now.Date.ToShortTimeString();
             
-            content = "User \t time: " + DateTime.Now.Hour +" : "+DateTime.Now.Minute+ "\n \t content: " +content; 
+            content = "User \t time: " + time +" : "+DateTime.Now.Minute+ "\n \t content: " +content; 
             tb_chat.Clear();
             lv_chat.Items.Add(content);
         }
@@ -102,5 +106,17 @@ namespace _1312193
         {
 
         }
+
+        private void cs_gomoku_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            
+        }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            cs_gomoku.Children.Clear();
+            Window_Loaded(null, null);
+        }
     }
+  
 }
