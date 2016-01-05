@@ -1,0 +1,31 @@
+﻿<Window x:Class="_1312193.MainWindow"
+        x:Name="frm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gomoku" Height="700" Width="1000" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" SizeChanged="frm_SizeChanged" WindowStyle="ToolWindow">
+    <Grid x:Name="grid_fram" Margin="-1,-1,-1,-4">
+
+        <Border x:Name="border_canvas" BorderBrush="Black" BorderThickness="3" Margin="24,62,0,0" HorizontalAlignment="Left" Width="610" Height="452" VerticalAlignment="Top" >
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Canvas x:Name="cs_gomoku"  MouseDown="cs_gomoku_MouseDown" Margin="-1"/>
+
+
+
+        </Border>
+        <Label Content="User name" Margin="0,52,214,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="67"/>
+        <TextBox Height="23" Margin="0,52,89,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="117"/>
+        <ListView x:Name="lv_chat" Height="275" Margin="0,159,30,0" VerticalAlignment="Top" SelectionChanged="ListView_SelectionChanged" BorderBrush="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}" HorizontalAlignment="Right" Width="255"/>
+        <Rectangle Fill="#FF005DFF" Height="28" Margin="0,126,31,0" Stroke="#FF0F7AFB" VerticalAlignment="Top" HorizontalAlignment="Right" Width="255"/>
+        <Label Content="Chat/History" Margin="0,126,100,0" VerticalAlignment="Top" Foreground="White" FontSize="16" HorizontalAlignment="Right" Width="100"/>
+        <TextBox x:Name="tb_chat" Height="23" Margin="0,439,139,0" TextWrapping="Wrap" VerticalAlignment="Top" TouchEnter="tb_chat_TouchEnter" TextChanged="tb_chat_TextChanged" HorizontalAlignment="Right" Width="144"/>
+        <Button x:Name="btn_send" Content="Gửi" Margin="0,440,37,0" VerticalAlignment="Top" Click="Button_Click" HorizontalAlignment="Right" Width="75"/>
+
+    </Grid>
+</Window>

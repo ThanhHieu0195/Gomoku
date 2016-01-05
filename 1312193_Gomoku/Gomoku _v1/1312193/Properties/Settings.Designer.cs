@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Gomoku.Properties
+namespace _1312193.Properties
 {
 
 
