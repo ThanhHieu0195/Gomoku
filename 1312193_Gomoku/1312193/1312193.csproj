@@ -66,8 +66,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="player.cs" />
-    <Compile Include="var.cs" />
+    <Compile Include="ModelProcess\process_broad.cs" />
+    <Compile Include="Model\broad.cs" />
+    <Compile Include="Model\player.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,6 +110,14 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageSource\ClockIcon.png" />
+    <Resource Include="ImageSource\Moodle.png" />
+    <Resource Include="ImageSource\o.jpg" />
+    <Resource Include="ImageSource\player1.jpg" />
+    <Resource Include="ImageSource\player2.jpg" />
+    <Resource Include="ImageSource\x.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

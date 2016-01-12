@@ -13,7 +13,7 @@
         <TextBox x:Name="tbx_name" HorizontalAlignment="Right" Margin="0,39,73,0" TextWrapping="Wrap" Width="81" Height="22" VerticalAlignment="Top" Text="User" Grid.ColumnSpan="2"/>
         <Button x:Name="btn_name" Content="Change" Height="22" Margin="0,39,10,0" VerticalAlignment="Top" Click="btn_name_Click" HorizontalAlignment="Right" Width="62" Grid.ColumnSpan="2"/>
         <Label x:Name="label" Content="Your name" HorizontalAlignment="Right" Margin="0,35,154,0" VerticalAlignment="Top" Height="26" Width="70" RenderTransformOrigin="0.493,2.269" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="tbx_mes" HorizontalAlignment="Right" Height="24" Margin="0,343,72,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" RenderTransformOrigin="0.478,1.955" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="tbx_mes" HorizontalAlignment="Right" Height="24" Margin="0,343,72,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" RenderTransformOrigin="0.478,1.955" Grid.ColumnSpan="2" />
         <Button x:Name="btn_sendmes" Content="Send" HorizontalAlignment="Right" Height="24" Margin="0,343,10,0" VerticalAlignment="Top" Width="61" Click="btn_sendmes_Click" Grid.ColumnSpan="2"/>
         <ListView x:Name="lvw_chat" Height="246" Width="213" BorderBrush="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}" Margin="0,92,10,0" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
 
@@ -21,22 +21,21 @@
         <Border x:Name="border" BorderBrush="Black" BorderThickness="2"  Height="561" Width="760" Margin="10,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" >
             <Canvas x:Name="cvs_gomoku" HorizontalAlignment="Left" Height="360" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" MouseDown="cvs_gomoku_MouseDown"/>
         </Border>
-       
-        
-        <Menu x:Name="menu" IsMainMenu="True" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="760" Margin="10,0,0,0">
-            <MenuItem Header="_FILE" Foreground="White" Background="Black" FontWeight="Bold" MouseMove="mousemove_Item" MouseLeave="mouseleave_Item">
-                <MenuItem Header="_New" Foreground="White" Background="Black" FontWeight="Bold" MouseMove="mousemove_Item" MouseLeave="mouseleave_Item"/>
-                <MenuItem Header="_Help" Foreground="White" Background="Black" FontWeight="Bold" MouseMove="mousemove_Item" MouseLeave="mouseleave_Item"/>
-                <MenuItem Header="Close" Foreground="White" Background="Black" FontWeight="Bold" MouseMove="mousemove_Item" MouseLeave="mouseleave_Item"/>
-            </MenuItem>
-            <MenuItem Header="_MODE" Foreground="White" Background="Black" FontWeight="Bold" MouseMove="mousemove_Item" MouseLeave="mouseleave_Item">
-                <MenuItem Header="_1 Vs 1" Foreground="White" Background="Black" FontWeight="Bold" Click="btn_1vs1_Click" MouseMove="mousemove_Item" MouseLeave="mouseleave_Item"/>
-                <MenuItem Header="_1 Vs Com" Foreground="White" Background="Black" FontWeight="Bold" Click="btn_1vsCOM_Click" MouseMove="mousemove_Item" MouseLeave="mouseleave_Item"/>
-                <MenuItem Header="_PlaySerVice" Foreground="White" Background="Black" FontWeight="Bold" Click="btn_playService_Click" MouseMove="mousemove_Item" MouseLeave="mouseleave_Item"/>
-            </MenuItem>
-            
+        <GroupBox Grid.ColumnSpan="2" Header="Setting" Margin="0,389,10,10" HorizontalAlignment="Right" Width="213">
+            <Canvas>
+                <Label Canvas.Left="10" Canvas.Top="10">
+                    Mode:
+                </Label>
+                <ComboBox Canvas.Left="81" Canvas.Top="14" Width="98" SelectionChanged="ComboBox_SelectionChanged">
+                    <ComboBoxItem Content="Offline" IsSelected="True"/>
+                    <ComboBoxItem Content="Online"/>
 
-        </Menu>
+                </ComboBox>
+                <RadioButton x:Name="rd_playeruser" Content="Player User" Canvas.Left="10" Canvas.Top="74" Height="15" Width="82" IsChecked="True" Click="rd_playeruser_Click"/>
+                <RadioButton x:Name="rd_playerpc" Content="Player PC" Canvas.Left="115" Canvas.Top="76" Height="13" Width="76" RenderTransformOrigin="0.052,0.861" Click="rd_playerpc_Click"/>
+                <Button Content="New game" Canvas.Left="67" Canvas.Top="128" Width="75" Click="Button_Click"/>
 
+            </Canvas>
+        </GroupBox>
     </Grid>
 </Window>

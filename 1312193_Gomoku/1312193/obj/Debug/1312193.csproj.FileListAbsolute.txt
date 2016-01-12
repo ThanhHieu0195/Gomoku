@@ -32,3 +32,37 @@ D:\Documents\Form nộp\LTW\v1.8\1312193_Gomoku_5\source\1312193\obj\Debug\13121
 D:\Documents\Form nộp\LTW\v1.8\1312193_Gomoku_5\source\1312193\obj\Debug\1312193.g.resources
 D:\Documents\Form nộp\LTW\v1.8\1312193_Gomoku_5\source\1312193\obj\Debug\_1312193.Properties.Resources.resources
 D:\Documents\Form nộp\LTW\v1.8\1312193_Gomoku_5\source\1312193\obj\Debug\1312193.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\bin\Debug\1312193.exe.config
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\obj\Debug\1312193.exe
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\obj\Debug\1312193.pdb
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\bin\Debug\1312193.exe
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\bin\Debug\1312193.pdb
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\bin\Debug\EngineIoClientDotNet.dll
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\bin\Debug\SocketIoClientDotNet.dll
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\bin\Debug\WebSocket4Net.dll
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\obj\Debug\1312193.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\obj\Debug\1312193_MarkupCompile.cache
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\obj\Debug\1312193.g.resources
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\obj\Debug\_1312193.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Gomoku-master\1312193_Gomoku\1312193\obj\Debug\1312193.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\bin\Debug\1312193.exe.config
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\obj\Debug\1312193.exe
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\obj\Debug\1312193.pdb
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\obj\Debug\1312193.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\obj\Debug\1312193_MarkupCompile.cache
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\obj\Debug\1312193.g.resources
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\obj\Debug\_1312193.Properties.Resources.resources
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\obj\Debug\1312193.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\bin\Debug\1312193.exe
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\bin\Debug\1312193.pdb
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\bin\Debug\EngineIoClientDotNet.dll
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\bin\Debug\SocketIoClientDotNet.dll
+C:\Users\Administrator\Desktop\GitHub\Gomoku\1312193_Gomoku\1312193\bin\Debug\WebSocket4Net.dll
